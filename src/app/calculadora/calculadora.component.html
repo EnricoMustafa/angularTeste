@@ -9,7 +9,14 @@
             <label for="numero2">Numero 2</label>
             <input type="number" name="numero2" id="numero2" [(ngModel)] = "numero2"/>
 
-            <button type="button" (click) ="calcularResultado()" >Somar</button>
+            <div>
+                <button type="button" (click) ="somar()" >+</button>
+                <button type="button" (click) ="subtrair()" >-</button>
+                <button type="button" (click) ="multiplicar()" >x</button>
+                <button type="button" (click) ="dividir()" >%</button>
+
+            </div>
+
         </form>
 
         <div class="result-dispĺay">

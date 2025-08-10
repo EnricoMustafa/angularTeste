@@ -13,8 +13,21 @@ export class CalculadoraComponent {
   numero2: number = 0;
   resultado: number = 0;
 
-  calcularResultado(){
+  somar(){
     console.log("Chamando o metodo para calcular o resultado");
     this.resultado = this.numero1 + this.numero2;
+  }
+
+  subtrair(){
+    this.resultado = this.numero1 - this.numero2;
+  }
+
+  multiplicar(){
+    this.resultado = this.numero1 * this.numero2;
+  }
+  
+  dividir(){
+    this.resultado = this.numero1 / this.numero2;
+    return this.resultado.toFixed(2)
   }
 }
